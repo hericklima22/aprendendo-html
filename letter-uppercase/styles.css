@@ -1,0 +1,10 @@
+body {
+    background-color: darkslateblue;
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+h4 {
+    color: white
+}
