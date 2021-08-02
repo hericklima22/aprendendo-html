@@ -1,6 +1,6 @@
 //esta função é executada toda ver que clicamos no botão de enviar
-function enviar() {
-    const entrada = document.querySelector("#frase")
+function firstLetterUppercase() {
+    const entrada = document.querySelector("#frase1")
     let fraseString = entrada.value
     fraseString = fraseString.toLowerCase()
     let novaString = ""
@@ -20,11 +20,22 @@ function enviar() {
     console.log(novaString)
 
     //esta parte do código é a saída, onde ele apresenta a frase pronta para o usuário
-    let html = '<h4 style="color: white;">'
+    let html = '<h4 style="color: black;">'
     html += novaString.toString()
     html += '</h4>'
 
-    document.querySelector('.frase-pronta').innerHTML = html
+    document.querySelector('#id-frase1').innerHTML = html
     
 }
 
+function allUpperCase() {
+    let entrada = document.querySelector("#frase2")
+    let frase = entrada.value.toString()
+    let fraseUpperCase = frase.toUpperCase()
+
+    let html = '<h4 style="color: black;">'
+    html += fraseUpperCase
+    html += '</h4>'
+
+    document.querySelector("#id-frase2").innerHTML = html
+}
