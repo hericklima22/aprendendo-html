@@ -6,15 +6,23 @@
     </head>
     <body>
         <form class="form-frase">
+            <h3 style="color: white;"><u>Primeira letra de cada palavra em maiúsculo</u></h3>
             <div class="text">
-                <label id="labelFrase" for="frase" style="color: white;">Insira sua frase:</label>
                 <br>
-                <input id="frase" type="text" required>
-                <input type="button" value="Enviar" onclick="enviar()">
+                <label for="frase" style="color: white;">Insira sua frase:</label>
+                <br>
+                <input id="frase1" type="text">
+                <input id="botao-enviar" type="button" value="Enviar" onclick="firstLetterUppercase()">
             </div>
-            <div class="frase-pronta">
-                
+            <div class="frase-pronta" id="id-frase1"></div>
+            <h3 style="color: white;"><u>Todas as palavras em maiúsculo</u></h3>
+            <div class="all-uppercase">
+                <label for="frase" style="color: white;">Insira sua frase:</label>
+                <br>
+                <input id="frase2" type="text">
+                <input id="botao-enviar" type="button" value="Enviar" onclick="allUpperCase()">
             </div>
+            <div class="frase-pronta" id="id-frase2">
         </form>
     </body>
 </html>
