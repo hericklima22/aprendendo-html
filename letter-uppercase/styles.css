@@ -5,6 +5,12 @@ body {
     justify-content: center;
 }
 
-h4 {
-    color: white
+.frase-pronta {
+    margin-top: 22px;
+    margin-bottom: 40px;
+    width: 235px;
+    height: 20px;
+    background-color: red;
 }
+
+
