@@ -20,3 +20,21 @@ body {
     transform: translate(-2%, -47%);
     background-color: black;
 }
+
+#div-buttons {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.buttons {
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    box-shadow: -5px 7px black;
+}
