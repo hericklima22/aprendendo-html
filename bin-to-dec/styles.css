@@ -1,0 +1,22 @@
+body {
+    background-color: #282a36;
+    display: flex;
+    justify-content: center;
+}
+
+.front-block {
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+}
+
+#center-block {
+    transform: translate(0%, -50%);
+    background-color: palevioletred;
+}
+
+#shadow {
+    transform: translate(-2%, -47%);
+    background-color: black;
+}
