@@ -13,4 +13,12 @@ body {
     background-color: red;
 }
 
-
+#botao-enviar {
+    border-color: #8e44ad;
+    border-radius: 0;
+    color: #8e44ad;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+}
