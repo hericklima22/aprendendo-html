@@ -85,6 +85,8 @@ body {
 }
 
 .binario {
+    position: relative;
+    top: 20px;
     background-color: transparent;
 }
 
@@ -92,7 +94,6 @@ body {
     background-color: transparent;
     height: 80px;
 }
-
 
 .output-text-dec, .input-text-bin {
     width: 300px;
@@ -103,6 +104,8 @@ body {
     box-shadow: black -5px 5px;
     border-radius: 10px;
     border: none;
+    font-family: arial;
+    font-size: 17px;
 }
 
 /*FIM DO ESTILO DO TEXT INPUT*/
