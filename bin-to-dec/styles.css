@@ -19,8 +19,8 @@ body {
 /*COMEÇO DOS ESTILOS DOS BOTÕES DE TRADUZIR E APAGAR*/
 .buttons {
     border-radius: 10px;
-    border: none;
     cursor: pointer;
+    border: none;
     text-transform: uppercase;
     height: 50px;
     width: 100px;
