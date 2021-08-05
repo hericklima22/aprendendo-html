@@ -110,6 +110,11 @@ body {
 
 /*FIM DO ESTILO DO TEXT INPUT*/
 
+.titulo {
+    color: cornsilk;
+    font-size: 25px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
