@@ -109,3 +109,12 @@ body {
 }
 
 /*FIM DO ESTILO DO TEXT INPUT*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    list-style: 100px;
+}
