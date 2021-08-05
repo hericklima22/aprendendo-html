@@ -34,5 +34,8 @@ function traduzir() {
 }
 
 function apagar() {
-
+  let entrada = document.querySelector(".input-text-bin")
+  let saida = document.querySelector(".output-text-dec")
+  entrada.value = ''
+  saida.value = ''
 }
