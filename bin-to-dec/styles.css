@@ -111,8 +111,11 @@ body {
 /*FIM DO ESTILO DO TEXT INPUT*/
 
 .titulo {
+    position: relative;
     color: cornsilk;
     font-size: 25px;
+    font-family: sans-serif;
+    top: 80px;
 }
 
 footer {
