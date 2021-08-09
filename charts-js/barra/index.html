@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart 1</title>
+</head>
+<body style="background-color: black;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
+    
+    <canvas id="myChart" width="400px" height="200px"></canvas>
+<script>
+    var arraySize = 100
+
+    var altura = new Array(arraySize * 2 + 1).fill(0)
+    altura[0] = arraySize / 2
+    var itens = []
+    for(let i = 0; i < arraySize * 2; i++) itens.push(i)
+
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: itens,
+            datasets: [{
+                data: altura,
+                backgroundColor: [
+                    'rgba(0, 255, 0, 0.3)'
+                ],
+                borderColor: [
+                    'rgba(0, 255, 0, 0.2)'
+                ],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    loop()
+
+    function loop() {
+        setTimeout(() => {
+            let index1 = Math.floor(Math.random() * arraySize * 2)
+            let index2 = Math.floor(Math.random() * arraySize * 2)
+            let indexFinal = index1 + index2
+            console.log(indexFinal)
+            altura[indexFinal] += 1
+            myChart.update()
+            loop()
+        //myChart.update()
+        }, 1);
+    }
+    
+</script>
+    
+</body>
+</html>
