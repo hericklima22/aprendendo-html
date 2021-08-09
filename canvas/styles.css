@@ -1,0 +1,9 @@
+body {
+    background-color: #282a36;
+    display: flex;
+    justify-content: center;
+}
+
+#canvas {
+    background-color: black;
+}
