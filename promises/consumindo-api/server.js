@@ -30,13 +30,9 @@ const filtraPessoas =  async(frequencia) => {
         const pessoas = await pegaPessoas()
 
         const pessoasPorPais = pessoas.map(element => {
-            return element
-        })
-
-        const pessoaFrequencia = pessoasPorPais.filter(pessoa => {
-            pessoa.frequencia <= 100
+            return element.res
         });
-        console.log(pessoaFrequencia)
+        console.log(pessoasPorPais)
     } catch (error) {
         console.error(error)
     }
