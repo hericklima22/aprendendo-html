@@ -8,16 +8,19 @@ function start() {
     drawMatrix(column, row)
 }
 
-function drawMatrix(column1, row1) {
+function drawMatrix(column, row) {
     let html = '<table cellpadding=0 cellspacing=0>'
+    let btnIndex = 0
 
-    for(let row = 0; row < row1; row++) {
+    for(let i = 0; i < row; i++) {
         html += '<tr>'
             
-            for(let column = 0; column < column1; column++) {
+            for(let j = 0; j < column; j++) {
+
                 html += '<td>'
-                html += `<div class="pixel-index">${column}</div>`
+                html += `<div class="cell-content"><input class="buttons" id="btn${btnIndex}" value="${btnIndex}" type="button" onClick="btnPress(${btnIndex})"></input></div>`
                 html += '</td>'
+                btnIndex++
             }
 
             html += '</tr>'
@@ -27,5 +30,10 @@ function drawMatrix(column1, row1) {
 
     document.querySelector('#matrix').innerHTML = html
 }
+
+function btnPress(btnIndex) {
+    console.log(btnIndex)
+}
+
 
 start()
