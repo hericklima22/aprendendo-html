@@ -4,8 +4,16 @@ const row = 10
 const array = []
 
 function start() {
-
+    randomValue()
     drawMatrix(column, row)
+}
+
+function randomValue() {
+    let arraySize = column * row
+
+    for(let index = 0; index < arraySize; index++) {
+        array.push(Math.floor(Math.random() * 10))
+    }
 }
 
 function drawMatrix(column, row) {
@@ -18,7 +26,7 @@ function drawMatrix(column, row) {
             for(let j = 0; j < column; j++) {
 
                 html += '<td>'
-                html += `<div class="cell-content"><input class="buttons" id="btn${btnIndex}" value="${btnIndex}" type="button" onClick="btnPress(${btnIndex})"></input></div>`
+                html += `<div class="cell-content"><input class="buttons" id="btn${btnIndex}" value="${array[btnIndex]}" type="button" onClick="btnPress(${btnIndex})"></input></div>`
                 html += '</td>'
                 btnIndex++
             }
@@ -32,7 +40,7 @@ function drawMatrix(column, row) {
 }
 
 function btnPress(btnIndex) {
-    console.log(btnIndex)
+    
 }
 
 
