@@ -4,11 +4,11 @@ const row = 10
 const array = []
 
 function start() {
-    randomValue()
+    calculateCellValue()
     drawMatrix(column, row)
 }
 
-function randomValue() {
+function calculateCellValue() {
     let arraySize = column * row
 
     for(let index = 0; index < arraySize; index++) {
